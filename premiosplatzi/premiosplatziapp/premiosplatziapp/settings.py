@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Cordoba' #zona horaria de la que trabaja nuestro proyecto pongo zona horaria de córdoba Argentina 
 
 USE_I18N = True
 
