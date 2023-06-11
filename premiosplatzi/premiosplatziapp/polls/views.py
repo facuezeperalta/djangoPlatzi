@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse #clase que permite ejecutar una respuesta http.
 # Create your views here.
-
+from .models import Question
 
 def index(request): #function base view
-    return HttpResponse('Estas en la página principal de Premios Platzi app')
+    latest_question_list = Question.objects.all()
+    return render(request,"polls/index.html",{
+        'latest_question_list' : latest_question_list
+    })
 
 
 def detail(request,question_id):
