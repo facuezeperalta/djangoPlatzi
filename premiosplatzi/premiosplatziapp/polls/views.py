@@ -4,7 +4,7 @@ from django.http import HttpResponse , HttpResponseRedirect #clase que permite e
 from .models import Question, Choice
 from django.urls import reverse
 
-def index(request): #function base view
+""" def index(request): #function base view
     latest_question_list = Question.objects.all()
     return render(request,"polls/index.html",{
         'latest_question_list' : latest_question_list
@@ -21,7 +21,10 @@ def results(request,question_id):
     question = get_object_or_404(Question,pk=question_id)
     return render(request,'polls/results.html',{
         "question": question,
-    })
+    }) """
+#creamos las vistas con clases de python.
+
+
 
 
 
